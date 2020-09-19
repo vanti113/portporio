@@ -1,0 +1,61 @@
+main
+  div.welcome
+    div.introduce
+      h1 こんにちは_
+      p 私はジュニアウェブエンジニアを目指していて、現在は主に HTML5,CSS3,JavascriptをこなしてWebページの作成やインターラクティブなウェブアプリの開発に取り組んでいます。フロントアンド側は ReactJS, sassを勉強しているし、バックアンド側は nodeJS基盤のExpressJSでウェブサーバの構築の練習に取り組んでいます。タスクランナーは Gulp.JSを使っています。 
+  div.welcome.project  
+    h1 My Portporios_
+
+    div.project_subTitle
+      span ページクローニング
+      a(href="https://github.com/vanti113/PageClone" target="_blank" title="Page1") 
+          i.fab.fa-github   
+      a(href="https://github.com/vanti113/PageClone2" target="_blank" title="page2") 
+          i.fab.fa-github   
+    div.project_view
+      a(href="https://vanti113.github.io/PageClone2/" target="./blank").view1
+        div.view_pic
+          img(src="./img/pageclone2.png", alt="Pageclone2")
+        div.view_desc   
+          include ../partials/clonePage2.pug
+      a(href="https://vanti113.github.io/PageClone/" target="./blank").view2
+        div.view_pic
+          img(src="./img/pageclone1.png", alt="pageclone1")
+        div.view_desc
+          include ../partials/clonePage1.pug
+
+    div.project_subTitle    
+      span Web To-doリストアプリ
+      a(href="https://github.com/vanti113/momontom" target="_blank" title="momontom") 
+          i.fab.fa-github  
+    div.project_view.n2  
+      a(href="https://vanti113.github.io/momontom/" target="./blank").view1 
+        div.view_pic
+          img(src="./img/momontom.png", alt="momontom")
+        div.view_desc
+          include ../partials/momontom.pug
+
+    div.project_subTitle 
+      span Cocktail紹介ページ
+      a(href="https://github.com/vanti113/CocktailPages" target="_blank" title="cocktail Pages") 
+          i.fab.fa-github        
+    div.project_view.n3  
+      a(href="https://vanti113.github.io/CocktailPages/" target="./blank").view1 
+        div.view_pic
+          img(src="./img/cocktails.png", alt="cocktails")
+        div.view_desc
+          include ../partials/cocktailPages.pug
+      
+    div.project_subTitle 
+      span メッセンジャーアプリのクローニング(デザイン部分)
+      a(href="https://github.com/vanti113/kakao-clone-v2final" target="_blank" title="kakao talk") 
+          i.fab.fa-github        
+    div.project_view.n4  
+      a(href="https://vanti113.github.io/kakao-clone-v2final" target="./blank").view1 
+        div.view_pic
+          img(src="./img/kakao1.png", alt="kakao")
+          img(src="./img/kakao3.png", alt="kakao")
+          img(src="./img/kakao2.png", alt="kakao")
+        div.view_desc
+          include ../partials/kakao.pug
+  

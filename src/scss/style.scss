@@ -1,0 +1,17 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+@import "description.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}

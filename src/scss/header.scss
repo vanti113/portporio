@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  height: 400px;
+  background: $gradient;
+  .myProfile {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .myProfile_pic {
+    position: relative;
+    img {
+      position: absolute;
+      width: 65%;
+      border-radius: 10px;
+      top: 80px;
+      left: 80px;
+    }
+  }
+  .myProfile_main {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 3em;
+    }
+    h5 {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+    .myProfile_title {
+      width: 100%;
+    }
+    .myProfile_detail {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-auto-rows: 40px;
+      column-gap: 20px;
+      margin-top: 40px;
+      span {
+        font-size: 18px;
+        &:nth-child(2n + 1) {
+          @include spanColor;
+        }
+      }
+      a {
+        text-decoration: none;
+        @include spanColor;
+        &:hover {
+          opacity: 1;
+        }
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

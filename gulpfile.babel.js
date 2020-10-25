@@ -86,4 +86,4 @@ const live = gulp.series([webServer, watch]);
 
 export const build = gulp.series([prepare, assets]);
 export const dev = gulp.series([build, live]);
-export const deploy = gulp.series([build, upload, clean]);
+export const deploy = gulp.series([upload, clean]);

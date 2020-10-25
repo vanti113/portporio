@@ -32,3 +32,24 @@
     }
   }
 }
+.detail__description {
+  word-spacing: 10px;
+  .description__list {
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    ol {
+      li {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        p {
+          margin-left: 27px;
+          line-height: 25px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

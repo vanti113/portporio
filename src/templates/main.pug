@@ -7,23 +7,27 @@ main
     h1 My Portporios_
 
     div.project_subTitle
-      span ページクローニング
-      a(href="https://github.com/vanti113/PageClone" target="_blank" title="Page1") 
-          i.fab.fa-github   
-      a(href="https://github.com/vanti113/PageClone2" target="_blank" title="page2") 
-          i.fab.fa-github   
+      span 動画Uploadサイト
+      a(href="https://github.com/vanti113/wetube" target="_blank" title="wetube") 
+          i.fab.fa-github
     div.project_view
-      a(href="https://vanti113.github.io/PageClone2/" target="./blank").view1
+      a(href="https://myapp-wetube.herokuapp.com/" target="./blank").view1
         div.view_pic
-          img(src="./img/pageclone2.png", alt="Pageclone2")
+          img(src="./img/wetube1.png", alt="wetube")
         div.view_desc   
-          include ../partials/clonePage2.pug
-      a(href="https://vanti113.github.io/PageClone/" target="./blank").view2
-        div.view_pic
-          img(src="./img/pageclone1.png", alt="pageclone1")
-        div.view_desc
-          include ../partials/clonePage1.pug
-
+          include ../partials/wetube.pug
+      .detail__description
+        ul.description__list
+          li 1. 開発日数 : 1ヶ月
+          li 2. 言語、開発環境 : Node.js, expressJS, Pug, Scss, Linux, MongoDB, AWS-S3
+          li 3. レヴュー
+          ol.description__list__review 
+            li 1) ユーザー登録 & ログイン
+              p Express.jsのPassportJSモジュールを活用して認証過程を単純化、ユーザ登録の時InputフォーマットでユーザがIDやパスワードを入力すると暗号をハッシュ化してMongoDBのユーザ文書に保存してセッションデータの処理も同じくMongoDBに保存する。GoogleやGithubのIDを利用する会員登録やログイン処理はAuth認証方式で処理する。
+            li 2) 動画アップロードやレコーディング機能
+              p まずユーザがアップロードした動画ファイルはAWSのS3サービスを利用して保管し、ユーザ別のMongDBドキュメントでその動画の参照アドレスを記録する。本ページではその動画の参照アドレスを呼び出して動画をプレーする。ユーザが直接後のページで具現したRecording機能で録画した後、アップロードをすることもできる。
+            li 3) 未解決部分
+              p プレーヤーのパートにエラーが発生しつつ、アプロードした動画やユーザがレコーディングした動画の全体のプレータイムが表示されない問題点がある。また、現在利用中のサーバの速度が遅いので接続速度が不安定し大きなサイズのファイルはアップロードがほぼできない。
     div.project_subTitle    
       span Web To-doリストアプリ
       a(href="https://github.com/vanti113/momontom" target="_blank" title="momontom") 
@@ -34,6 +38,18 @@ main
           img(src="./img/momontom.png", alt="momontom")
         div.view_desc
           include ../partials/momontom.pug
+      .detail__description
+        ul.description__list
+          li 1. 開発日数 : １周間ほど
+          li 2. 言語、開発環境 : HTML5, CSS3, Vanilascript
+          li 3. レヴュー
+          ol.description__list__review 
+            li 1) ユーザメモをLocal環境で保存
+              p 誰も簡単に自分のブラウザでTodoリストアプリを使うようにすることが開発の目的で、名前だけ登録するとユーザのメモ保存ができるようになる。
+            li 2) 位置情報や天気情報を公開情報Webサイトから取得
+              p 無料APIを提供するWebサイトから情報を取得し、アプリの中で表示する
+            li 3) 未解決部分
+              p DBを使わないのでセキュリティー性が低い。　　    
 
     div.project_subTitle 
       span Cocktail紹介ページ
@@ -45,7 +61,18 @@ main
           img(src="./img/cocktails.png", alt="cocktails")
         div.view_desc
           include ../partials/cocktailPages.pug
-      
+      .detail__description
+        ul.description__list
+          li 1. 開発日数 : １周間ほど
+          li 2. 言語、開発環境 : ReactJS、CSS3
+          li 3. レヴュー
+          ol.description__list__review 
+            li 1) Reactコンポネートを使う練習
+              p React-Router-Domモジュールを利用してコンポネートを分離してトップページからデータを伝える構造を作る。
+            li 2) 公開APIからデータ受信 
+              p 無料APIを提供するWebサイトから情報を取得し、アプリの中で表示する
+            li 3) 未解決部分
+              p 検索機能の不在
     div.project_subTitle 
       span メッセンジャーアプリのクローニング(デザイン部分)
       a(href="https://github.com/vanti113/kakao-clone-v2final" target="_blank" title="kakao talk") 
@@ -58,4 +85,12 @@ main
           img(src="./img/kakao2.png", alt="kakao")
         div.view_desc
           include ../partials/kakao.pug
-  
+      .detail__description
+        ul.description__list
+          li 1. 開発日数 :２日ほど
+          li 2. 言語、開発環境 : HTML5、CSS3、Vanilascript
+          li 3. レヴュー
+          ol.description__list__review 
+            li 1) 有名メッセンジャーのデザイン要素を実習
+              p 基礎的なHTML構造の理解やCSSを利用した効果を実習する
+            
